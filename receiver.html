@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080e1a">
+  <title>CleanYourNest — Receiver</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+  <script defer src="assets/receiver.js"></script>
+</head>
+<body class="receiver-page">
+  <main class="receiver-board" aria-label="CleanYourNest">
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <header class="topbar">
+      <div class="identity"><div class="mark"><span>⌂</span></div><div><strong>CleanYourNest</strong><small>Custom Cast Receiver · v0.1</small></div></div>
+      <div class="status-pill"><span class="pulse"></span><span id="receiver-state">Cast starten…</span></div>
+    </header>
+    <section class="hero">
+      <div class="hero-text">
+        <div class="eyebrow">JE EIGEN NEST HUB · DEMO</div>
+        <h1 id="clock">--:--</h1>
+        <p id="date">Laden…</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="ring ring-one"></div><div class="ring ring-two"></div><div class="orb">✦</div></div>
+    </section>
+    <section class="tiles">
+      <article class="tile"><div class="tile-icon">◎</div><div><span class="tile-name">Google Cast</span><strong id="cast-status">Verbinden…</strong></div></article>
+      <article class="tile"><div class="tile-icon">⌁</div><div><span class="tile-name">Home Assistant</span><strong>Later koppelen</strong></div></article>
+      <article class="tile"><div class="tile-icon">◈</div><div><span class="tile-name">USB / Fuchsia</span><strong>Onderzoek apart</strong></div></article>
+    </section>
+    <footer><span>Eigen interface • Geen firmwarewijzigingen</span><span id="connection-counter">Wacht op sender</span></footer>
+  </main>
+  <cast-media-player class="cast-media-hidden"></cast-media-player>
+</body>
+</html>

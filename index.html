@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CleanYourNest — Start Cast</title>
+<link rel="stylesheet" href="assets/style.css"><script defer src="assets/sender.js"></script>
+</head>
+<body class="sender-page"><main class="sender-card">
+<span class="tag">CLEANYOURNEST · TEST SENDER</span>
+<h1>Je Nest Hub. Jouw interface.</h1>
+<p>Start de eigen Cast Receiver op je geregistreerde Google Nest Hub. De App ID krijg je van de Google Cast Developer Console.</p>
+<label for="app-id">Google Cast Application ID</label>
+<input id="app-id" name="app-id" inputmode="text" placeholder="Bijvoorbeeld 1A2B3C4D" autocomplete="off" spellcheck="false" maxlength="40">
+<div class="buttons"><button id="connect" type="button" disabled>Start op Nest Hub</button><button id="stop" type="button" class="secondary" disabled>Stop Cast</button></div>
+<div id="output" class="output" role="status" aria-live="polite">Cast SDK laden…</div>
+<p class="instructions">Gebruik <strong>Google Chrome op Windows</strong>. Je Nest Hub moet in dezelfde bereikbare netwerkzone zitten; VLAN-firewallregels en mDNS kunnen ontdekking blokkeren. De receiver-URL voor de Google Console is <code>.../receiver.html</code>, niet de hoofdpagina of het lokale IP van je Nest Hub.</p>
+<p class="instructions"><a href="receiver.html" target="_blank" rel="noopener">Bekijk de receiver als browserdemo ↗</a></p>
+</main></body>
+</html>
