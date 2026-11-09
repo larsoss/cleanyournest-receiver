@@ -1,0 +1,22 @@
+# Plaats als /etc/systemd/system/cleanyournest-ha.service
+# Werk het pad en de Linux-gebruiker hieronder bij.
+[Unit]
+Description=CleanYourNest Home Assistant bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cleanyournest
+WorkingDirectory=/opt/cleanyournest/bridge
+ExecStart=/opt/cleanyournest/bridge/start.sh
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/opt/cleanyournest/bridge
+
+[Install]
+WantedBy=multi-user.target

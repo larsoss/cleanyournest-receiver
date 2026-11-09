@@ -1,0 +1,17 @@
+[
+  {"id":"weather.knmi_thuis", "label":"Weer", "kind":"weather", "control":false},
+  {"id":"sensor.woonkamer_temperatuur", "label":"Woonkamer", "kind":"temperature", "control":false},
+  {"id":"sensor.tuin_temperatuur", "label":"Buiten", "kind":"temperature", "control":false},
+  {"id":"person.lars", "label":"Lars", "kind":"person", "control":false},
+  {"id":"person.desiree", "label":"Desiree", "kind":"person", "control":false},
+  {"id":"binary_sensor.deur_voordeur_contact", "label":"Voordeur", "kind":"door", "control":false},
+  {"id":"binary_sensor.deur_achterdeur_contact", "label":"Achterdeur", "kind":"door", "control":false},
+  {"id":"light.woonkamer", "label":"Woonkamer", "kind":"light", "control":true},
+  {"id":"light.keuken", "label":"Keuken", "kind":"light", "control":true},
+  {"id":"light.eettafel", "label":"Eettafel", "kind":"light", "control":true},
+  {"id":"light.slaapkamer", "label":"Slaapkamer", "kind":"light", "control":true},
+  {"id":"light.overloop", "label":"Overloop", "kind":"light", "control":true},
+  {"id":"light.alle_verlichting", "label":"Alle lampen", "kind":"light", "control":true},
+  {"id":"media_player.arc", "label":"Sonos Arc", "kind":"media", "control":true},
+  {"id":"media_player.keuken", "label":"Sonos Keuken", "kind":"media", "control":true}
+]

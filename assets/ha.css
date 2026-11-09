@@ -1,0 +1,59 @@
+/* The original CleanYourNest visual language, with a touch-first Home Assistant layer. */
+.receiver-board.ha-ready-design { gap: 10px; padding-top: 22px; padding-bottom: 15px; }
+.receiver-board.ha-ready-design .hero { flex:0 0 auto; min-height:135px; padding:4px 3%; }
+.receiver-board.ha-ready-design .hero h1 { font-size:clamp(70px,10.4vw,130px); margin:4px 0; line-height:1; }
+.receiver-board.ha-ready-design .hero p { font-size:clamp(14px,1.7vw,19px); }
+.receiver-board.ha-ready-design .eyebrow { font-size:11px; }
+.receiver-board.ha-ready-design .hero-art { width:140px; height:140px; margin-right:8%; }
+.receiver-board.ha-ready-design .orb { font-size:60px; }
+.receiver-board.ha-ready-design .tiles { flex:0 0 auto; gap:9px; }
+.receiver-board.ha-ready-design .tile { padding:10px 14px; border-radius:14px; }
+.receiver-board.ha-ready-design .tile-icon { font-size:23px; width:30px; }
+.receiver-board.ha-ready-design .tile strong { font-size:13px; }
+.receiver-board.ha-ready-design .tile-name { font-size:11px; }
+.receiver-board.ha-ready-design footer { padding-top:0; }
+.ha-dashboard { flex:1; min-height:0; display:flex; flex-direction:column; gap:10px; }
+.ha-heading { display:flex; align-items:center; justify-content:space-between; min-height:25px; }
+.ha-eyebrow { font-size:11px; font-weight:750; letter-spacing:.18em; color:#70e1f1; }
+.ha-connection { font-size:12px; color:#afc3d7; display:inline-flex; gap:7px; align-items:center; }
+.ha-connection::before { content:''; display:inline-block; width:7px; height:7px; border-radius:50%; background:#b77e65; }
+.ha-connection.ha-connected::before { background:#4be4c6; box-shadow:0 0 10px #4be4c680; }
+.ha-stats { flex:0 0 auto; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+.ha-stat { min-width:0; padding:11px 15px; border:1px solid #4b668344; border-radius:15px; background:linear-gradient(140deg,#18304999,#102138c9); }
+.ha-stat small { display:block; color:#91b0c8; font-size:11px; margin-bottom:7px; }
+.ha-stat strong { display:block; font-size:19px; font-weight:730; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; letter-spacing:-.03em; }
+.ha-stat p { color:#7f9fb9; font-size:10px; margin:4px 0 0; }
+.ha-content { flex:1; min-height:0; display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); gap:10px; }
+.ha-panel { border:1px solid #4b668344; border-radius:18px; background:#0d2035bc; padding:12px 15px; display:flex; flex-direction:column; min-height:0; }
+.ha-panel-header { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:9px; }
+.ha-panel h2 { font-size:17px; margin:0; letter-spacing:-.04em; }
+.ha-panel-header small { font-size:10px; color:#8ca9bf; text-align:right; }
+.ha-light-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; overflow:auto; }
+.ha-light { text-align:left; display:flex; align-items:center; gap:10px; min-height:60px; padding:11px; border:1px solid #43617c77; border-radius:14px; background:#0c1e32; color:#cfe4f5; cursor:pointer; font:inherit; }
+.ha-light.is-on { background:linear-gradient(135deg,#154564,#16344e); border-color:#5ed9f29a; }
+.ha-light:disabled { opacity:.55; cursor:not-allowed; }
+.ha-light-symbol { font-size:25px; color:#638ba5; }
+.ha-light.is-on .ha-light-symbol { color:#82e8ff; text-shadow:0 0 14px #4edbff99; }
+.ha-light-info { min-width:0; }
+.ha-light-info strong { display:block; font-size:12px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.ha-light-info small { display:block; color:#94adbe; font-size:11px; margin-top:4px; }
+.ha-music-row { display:flex; align-items:center; gap:8px; margin-bottom:9px; }
+.ha-select { appearance:none; width:100%; padding:8px 10px; border-radius:9px; border:1px solid #43617c; color:#edf8ff; background:#14283d; font:inherit; font-size:12px; }
+.ha-track { font-size:12px; color:#bcd5e7; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin:7px 0 12px; }
+.ha-music-buttons { display:flex; gap:8px; }
+.ha-control { flex:1; border:1px solid #42677f; border-radius:11px; background:#123a52; color:#d4f7ff; padding:11px 9px; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
+.ha-control:disabled { opacity:.5; cursor:not-allowed; }
+.ha-volume-row { display:flex; align-items:center; gap:10px; color:#94b5c9; margin-top:auto; font-size:11px; padding-top:12px; }
+.ha-volume-row input { width:100%; accent-color:#63e2f0; }
+.ha-toast { position:absolute; bottom:88px; left:50%; transform:translateX(-50%); background:#391d27; color:#ffd3de; border:1px solid #e881a3; padding:10px 18px; border-radius:12px; font-size:12px; box-shadow:0 10px 30px #0005; z-index:10; }
+.ha-toast[hidden] { display:none; }
+.ha-setup { margin:22px 0 16px; padding:18px; border:1px solid #42647a; border-radius:16px; background:#10233a; }
+.ha-setup h2 { margin:0 0 3px; font-size:21px; }
+.ha-setup p { font-size:13px; }
+.ha-setup label { margin-top:12px; }
+.ha-setup input { height:44px; }
+.ha-setup .buttons { margin-top:12px; }
+.ha-sender-status { color:#80dce6; margin-top:9px; font-size:13px; min-height:17px; }
+@media (max-width:850px) {.receiver-board.ha-ready-design .hero-art{display:none}.ha-light-list{grid-template-columns:repeat(2,minmax(0,1fr));}.ha-stat{padding:8px}.ha-stat strong{font-size:15px}.ha-content{grid-template-columns:1.15fr 1fr}}
+@media (max-height:650px) {.receiver-board.ha-ready-design{gap:6px;padding-top:8px;padding-bottom:8px}.receiver-board.ha-ready-design .hero{min-height:64px}.receiver-board.ha-ready-design .hero h1{font-size:56px}.receiver-board.ha-ready-design .hero-art{display:none}.ha-stats{gap:6px}.ha-stat{padding:7px 10px}.ha-panel{padding:7px 10px}.ha-light{min-height:45px;padding:6px}.receiver-board.ha-ready-design .tile{padding:6px}}
+@media (max-width:590px) {.ha-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.ha-content{grid-template-columns:1fr;overflow:auto}.ha-panel{min-height:205px}.receiver-board.ha-ready-design .tiles{display:none}.receiver-board.ha-ready-design footer{display:none}.receiver-board.ha-ready-design .hero{min-height:90px}.receiver-board.ha-ready-design .hero h1{font-size:64px}}
